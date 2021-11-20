@@ -8,6 +8,7 @@
 
 - HTML
 - CSS
+- SCSS
 - JavaScript
 - Flexbox
 - BEM-naming
