@@ -7,7 +7,8 @@ $(function () {
   });
 
   $(".header__btn-menu").on("click", function () {
-    $(".menu").toggleClass("menu--open");
+    $(".header__btn-menu, .header-menu").toggleClass("active");
+    $("body").toggleClass("lock");
   });
 
   $(".top__slider").slick({
