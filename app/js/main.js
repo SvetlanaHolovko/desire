@@ -6,10 +6,15 @@ $(function () {
     $(".rightside-menu").addClass("rightside-menu--close");
   });
 
-  $(".header__btn-menu").on("click", function () {
-    $(".header__btn-menu, .header-menu").toggleClass("active");
-    $("body").toggleClass("lock");
-  });
+  const burgerMenu = document.querySelector(".header__burger");
+  const menuHeader = document.querySelector(".header-menu");
+  if (burgerMenu) {
+    burgerMenu.addEventListener("click", function (e) {
+      document.body.classList.toggle("lock");
+      burgerMenu.classList.toggle("active");
+      menuHeader.classList.toggle("active");
+    });
+  }
 
   $(".top__slider").slick({
     dots: true,
