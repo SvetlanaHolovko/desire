@@ -6,9 +6,15 @@ $(function () {
     $(".rightside-menu").addClass("rightside-menu--close");
   });
 
-  $(".header__btn-menu").on("click", function () {
-    $(".menu").toggleClass("menu--open");
-  });
+  const burgerMenu = document.querySelector(".header__burger");
+  const menuHeader = document.querySelector(".header-menu");
+  if (burgerMenu) {
+    burgerMenu.addEventListener("click", function (e) {
+      document.body.classList.toggle("lock");
+      burgerMenu.classList.toggle("active");
+      menuHeader.classList.toggle("active");
+    });
+  }
 
   $(".top__slider").slick({
     dots: true,
