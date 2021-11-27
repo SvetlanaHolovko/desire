@@ -145,6 +145,13 @@
       }
     }
   }
+
+  .about {
+    &__prev-title {
+      font-size: 46px;
+      line-height: 56px;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -198,6 +205,13 @@
     }
 
     &__item {
+      margin-bottom: 40px;
+    }
+  }
+
+  .about {
+    &__prev {
+      padding: 80px 0;
       margin-bottom: 40px;
     }
   }
@@ -319,6 +333,13 @@
 
     &__subtitle-link {
       line-height: 34px;
+    }
+  }
+
+  .about {
+    &__prev-title {
+      font-size: 36px;
+      line-height: 40px;
     }
   }
 }
