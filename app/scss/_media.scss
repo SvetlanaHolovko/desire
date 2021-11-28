@@ -6,6 +6,13 @@
       width: 100%;
     }
   }
+
+  .inspiration {
+    &__img {
+      margin-right: 30px;
+      margin-left: -100px;
+    }
+  }
 }
 
 @media (max-width: 1200px) {
@@ -42,6 +49,12 @@
       }
     }
   }
+
+  .inspiration {
+    &__img {
+      margin-left: 0;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -65,6 +78,22 @@
     &__btn {
       margin: 0;
       padding: 6px 10px;
+    }
+  }
+
+  .about {
+    &__prev {
+      margin-bottom: 80px;
+    }
+
+    &__content-text {
+      padding-left: 150px;
+    }
+  }
+
+  .inspiration {
+    &__img {
+      margin-left: -100px;
     }
   }
 
@@ -151,6 +180,16 @@
       font-size: 46px;
       line-height: 56px;
     }
+
+    &__content-text {
+      padding-left: 0;
+    }
+  }
+
+  .inspiration {
+    &__img {
+      margin-left: -200px;
+    }
   }
 }
 
@@ -213,6 +252,38 @@
     &__prev {
       padding: 80px 0;
       margin-bottom: 40px;
+    }
+
+    &__content {
+      padding-bottom: 20px;
+
+      &-text p {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__popup {
+      margin-bottom: 40px;
+    }
+  }
+
+  .inspiration {
+    &__img {
+      display: none;
+    }
+
+    &__inner {
+      margin-bottom: 20px;
+    }
+
+    &__text {
+      margin-bottom: 30px;
+    }
+  }
+
+  .partners {
+    &__items {
+      grid-gap: 10px;
     }
   }
 
@@ -339,6 +410,18 @@
   .about {
     &__prev-title {
       font-size: 36px;
+      line-height: 40px;
+    }
+
+    &__content {
+      &-title {
+        line-height: 40px;
+      }
+    }
+  }
+
+  .inspiration {
+    &__title {
       line-height: 40px;
     }
   }
@@ -576,6 +659,43 @@
     &__subtitle {
       font-size: 22px;
       line-height: 34px;
+    }
+  }
+
+  .about {
+    &__content-title {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+
+    &__popup {
+      margin-bottom: 25px;
+    }
+  }
+
+  .inspiration {
+    &::after {
+      bottom: 0;
+    }
+    &__title {
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    &__item {
+      font-size: 16px;
+      margin-bottom: 20px;
+
+      &-text {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .partners {
+    padding: 5px 0;
+
+    &__items {
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }

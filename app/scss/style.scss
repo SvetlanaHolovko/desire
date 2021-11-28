@@ -778,7 +778,7 @@
     padding-bottom: 40px;
   }
 
-  &__title {
+  &__content-title {
     color: $title;
     @extend %title-font;
     font-size: 36px;
@@ -799,7 +799,7 @@
     }
   }
 
-  &__text {
+  &__content-text {
     padding-left: 285px;
 
     & p {
@@ -904,13 +904,9 @@
   padding: 25px 0 15px;
 
   &__items {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  &__item:not(:last-child) {
-    margin-right: 68px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
   }
 }
 
