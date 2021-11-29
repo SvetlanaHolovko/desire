@@ -1,3 +1,9 @@
+@media (max-width: 1700px) {
+  .contact-slider__img {
+    width: 100%;
+  }
+}
+
 @media (max-width: 1370px) {
   .collection {
     grid-template-columns: repeat(3, 1fr);
@@ -12,6 +18,9 @@
       margin-right: 30px;
       margin-left: -100px;
     }
+  }
+  .map {
+    margin-top: 0;
   }
 }
 
@@ -94,6 +103,34 @@
   .inspiration {
     &__img {
       margin-left: -100px;
+    }
+  }
+
+  .gallery {
+    padding: 40px 0 18px;
+
+    &.gallery-page {
+      margin-bottom: 40px;
+    }
+  }
+
+  .contact {
+    margin-bottom: 80px;
+
+    &__inner {
+      padding-left: 150px;
+    }
+
+    &__form-btn {
+      width: 50%;
+    }
+  }
+
+  .contact-slider {
+    margin-bottom: 80px;
+
+    &__img {
+      height: 240px;
     }
   }
 
@@ -191,6 +228,12 @@
       margin-left: -200px;
     }
   }
+
+  .contact {
+    &__inner {
+      padding-left: 0;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -225,6 +268,11 @@
 
   .gallery {
     padding-top: 45px;
+
+    &.gallery-page {
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+    }
 
     &__button {
       margin-bottom: 20px;
@@ -284,6 +332,28 @@
   .partners {
     &__items {
       grid-gap: 10px;
+    }
+  }
+
+  .map {
+    margin-bottom: 20px;
+
+    iframe {
+      height: 350px;
+    }
+  }
+
+  .contact {
+    margin-bottom: 40px;
+
+    &__title {
+      line-height: 40px;
+      padding-bottom: 20px;
+      margin-bottom: 25px;
+    }
+
+    &-slider {
+      margin-bottom: 40px;
     }
   }
 
@@ -425,6 +495,12 @@
       line-height: 40px;
     }
   }
+
+  .contact-slider {
+    &__img {
+      height: 310px;
+    }
+  }
 }
 
 @media (max-width: 540px) {
@@ -545,6 +621,9 @@
         display: block;
         padding: 15px;
       }
+      .menu__list-link--active::before {
+        display: none;
+      }
     }
   }
 
@@ -634,7 +713,11 @@
     }
 
     &__item:first-child {
-      grid-column: span 1;
+      grid-column: span 2;
+      grid-row: span 1;
+    }
+    &__item {
+      grid-column: span 2;
       grid-row: span 1;
     }
 
@@ -698,9 +781,37 @@
       grid-template-columns: repeat(3, 1fr);
     }
   }
+
+  .contact {
+    &__title {
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+
+    &__form-input {
+      width: 100%;
+    }
+
+    &__form-btn {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 375px) {
+  .gallery {
+    &__item img {
+      max-height: 350px;
+      min-height: 300px;
+    }
+  }
+
+  .contact {
+    &__form-input {
+      width: 100%;
+    }
+  }
+
   .footer {
     &__inner {
       justify-content: space-between;

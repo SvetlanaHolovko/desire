@@ -25,6 +25,7 @@
     box-shadow: -2px -2px 10px -10px #000;
     z-index: 1;
   }
+
   &__inner {
     display: flex;
     align-items: center;
@@ -917,6 +918,10 @@
 .map {
   margin-top: -55px;
   margin-bottom: 55px;
+
+  iframe {
+    height: 578px;
+  }
 }
 
 .contact {
@@ -1051,7 +1056,7 @@
     top: 0;
     bottom: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background-color: rgba(#fff, 0.6);
     color: $title;
