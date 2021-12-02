@@ -64,6 +64,42 @@
       margin-left: 0;
     }
   }
+
+  .aside {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 1040px) {
+  .blog {
+    &__inner {
+      flex-wrap: wrap;
+    }
+
+    &__items {
+      max-width: 100%;
+    }
+
+    &__item-img {
+      max-width: 100%;
+      width: 100%;
+    }
+  }
+
+  .aside {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 50px;
+    order: -1;
+
+    &__search {
+      max-width: 50%;
+    }
+
+    &.aside-one {
+      margin-left: 0;
+    }
+  }
 }
 
 @media (max-width: 992px) {
@@ -131,6 +167,14 @@
 
     &__img {
       height: 240px;
+    }
+  }
+
+  .blog-one {
+    padding-bottom: 80px;
+
+    &__form-btn {
+      width: 49%;
     }
   }
 
@@ -354,6 +398,26 @@
 
     &-slider {
       margin-bottom: 40px;
+    }
+  }
+
+  .blog {
+    padding-top: 40px;
+    padding-bottom: 25px;
+
+    &__item {
+      margin-bottom: 40px;
+    }
+
+    &__blockquote {
+      margin-bottom: 40px;
+      padding: 25px 20px;
+    }
+  }
+
+  .aside {
+    &__search {
+      max-width: 100%;
     }
   }
 
@@ -794,6 +858,106 @@
 
     &__form-btn {
       width: 100%;
+    }
+  }
+
+  .blog {
+    padding-top: 20px;
+
+    &__item {
+      margin-bottom: 25px;
+
+      &-title {
+        font-size: 24px;
+        line-height: 30px;
+      }
+    }
+
+    &__blockquote {
+      margin-bottom: 20px;
+      padding: 20px 4px;
+
+      &-autor {
+        font-size: 20px;
+        line-height: 34px;
+        margin-top: 10px;
+        padding-top: 10px;
+      }
+    }
+  }
+
+  .blog-one {
+    &__tags-title,
+    &__comments-title,
+    &__form-title,
+    &__comments-name {
+      font-size: 20px;
+      line-height: 31px;
+    }
+
+    &__form-input {
+      width: 100%;
+    }
+
+    &__form-btn {
+      width: 100%;
+    }
+
+    &__item blockquote {
+      padding: 0 5px;
+    }
+
+    &__links {
+      padding: 20px 0;
+      margin-bottom: 20px;
+
+      & span {
+        display: none;
+      }
+    }
+
+    &__comments-item {
+      flex-wrap: wrap;
+    }
+
+    &__comments-name,
+    &__comments-date {
+      margin-left: 80px;
+    }
+
+    &__comments-info {
+      margin-top: -60px;
+      margin-bottom: 10px;
+    }
+
+    &__comments-reply {
+      margin-left: 0;
+    }
+
+    &__comments-title {
+      margin-bottom: 20px;
+    }
+  }
+
+  .aside {
+    margin-bottom: 20px;
+
+    &__category-title,
+    &-posts__title,
+    &__tags-title {
+      font-size: 16px;
+      line-height: 27px;
+      margin-bottom: 10px;
+    }
+
+    &__search {
+      margin-bottom: 20px;
+    }
+
+    &__category,
+    &-posts,
+    &__tags {
+      margin-bottom: 20px;
     }
   }
 }
